@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "updated_local": "2026-10-29T12:48:28",
+  "run_directory": "./example_batch_results/run_20261029_124806_581510",
+  "counts": {
+    "completed": 1,
+    "failed": 0,
+    "interrupted": 0,
+    "missing_pair_skipped": 0
+  },
+  "available_pairs": 1,
+  "unpaired_indices": [],
+  "pore_pixel_count": 4298995,
+  "elapsed_this_invocation_seconds": 23.02,
+  "saturation_definition": "2D projected liquid/air pixel area divided by fixed pore pixel area",
+  "review_range": "All flagged pixels may change phase; unflagged labels held fixed. Not a CI.",
+  "source_check": "Reference SHA256; series file path, size and mtime_ns; per-pair hashes if enabled",
+  "sensitivity_policy": "none",
+  "archived_example": true,
+  "archive_note": "Sanitized static example. Run the demo for a fresh resumable run."
+}

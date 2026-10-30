@@ -1,0 +1,2 @@
+pair_number,first_index,second_index,blue_index,red_blue_index,blue_path,red_blue_path,time_seconds,planned_status
+0,6544,6545,6545,6544,./input_images/Basler_acA4112-20um__40402042__20261023_163522172_6545.tiff,./input_images/Basler_acA4112-20um__40402042__20261023_163522172_6544.tiff,,ready

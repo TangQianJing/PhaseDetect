@@ -1,0 +1,6 @@
+numpy>=1.23,<3
+scipy>=1.9,<2
+scikit-image>=0.20,<1
+tifffile>=2023.1.23
+matplotlib>=3.6,<4
+Pillow>=9,<14

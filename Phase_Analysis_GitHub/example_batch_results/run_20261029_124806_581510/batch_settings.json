@@ -1,0 +1,163 @@
+{
+  "run_mode": "series",
+  "input_folder": "./input_images",
+  "output_folder": "./example_batch_results",
+  "mask_input": {
+    "mode": "binarize",
+    "image_path": "./input_images/Basler_acA4112-20um__40402042__20261023_163522172_0001.tiff",
+    "grain_mask_path": null,
+    "white_is_grain": true,
+    "bed_mask_path": null,
+    "display_reference_path": null
+  },
+  "series": {
+    "start_index": 6544,
+    "end_index": 6545,
+    "blue_parity": "odd",
+    "file_pattern": null,
+    "index_regex": "(?P<index>\\d+)$",
+    "unpaired_policy": "error",
+    "missing_pair_policy": "error",
+    "pair_interval_seconds": null
+  },
+  "batch": {
+    "report_policy": "first",
+    "sensitivity_policy": "none",
+    "export_level": "minimal",
+    "pair_error_policy": "stop",
+    "plot_every": 10,
+    "preflight_shapes": true,
+    "resume_from": null,
+    "retain_last_pair": true
+  },
+  "red_blue_image": "6544",
+  "blue_image": "6545",
+  "expected_shape_hw": [
+    3000,
+    4096
+  ],
+  "show_figures": false,
+  "make_report": true,
+  "save_intermediate_arrays": false,
+  "hash_pair_sources": true,
+  "bed_polygon_xy": [
+    [
+      55,
+      576
+    ],
+    [
+      4030,
+      590
+    ],
+    [
+      4030,
+      2580
+    ],
+    [
+      55,
+      2570
+    ]
+  ],
+  "roi_xyxy": null,
+  "blue_scale": 1.1,
+  "initial_shift_yx": [
+    0.0,
+    0.0
+  ],
+  "blue_shift_yx": [
+    0.0,
+    0.0
+  ],
+  "grain": {
+    "window": 101,
+    "k": 0.25,
+    "r": 0.5,
+    "p": 2.0,
+    "q": 10.0,
+    "sigma": 0.8,
+    "min_area": 25,
+    "intensity_scale": 255.0
+  },
+  "wall": {
+    "normal_sigma": 1.1,
+    "channel_sigma": 0.9,
+    "bed_clearance": 10.0,
+    "profile_chunk_size": 200000,
+    "lit_rb": 14.0,
+    "lit_d": 12.0,
+    "lit_d_min_rb": 6.0,
+    "lit_b": 10.0,
+    "lit_b_min_rb": 5.0,
+    "unlit_rb": 6.0,
+    "unlit_b": 5.0,
+    "unlit_d": 6.0
+  },
+  "fluorescence": {
+    "threshold": 55.0,
+    "sigma": 0.9,
+    "shiny_distance": 4.5,
+    "shiny_contrast": 10.0,
+    "outer_margin": 10.0
+  },
+  "segmentation": {
+    "watershed_sigma_px": 1.0,
+    "watershed_h": 8.0,
+    "watershed_sensitivity": [
+      5.0,
+      8.0,
+      12.0
+    ],
+    "air_wall_lit_fraction": 0.27,
+    "air_wall_min_lit_samples": 12,
+    "air_wall_min_valid_samples": 20,
+    "air_wall_max_unlit_fraction": 0.65,
+    "broad_water_region_fraction": 0.6,
+    "broad_water_min_pixels": 20,
+    "use_fringe_graph": true,
+    "detect_liquid_inclusions": true
+  },
+  "fluorescence_sensitivity": [
+    45.0,
+    65.0
+  ],
+  "review_boundary_width_px": 2,
+  "gradient_sigma_px": 0.9,
+  "examples": [
+    {
+      "name": "Broad fluorescent water",
+      "xyxy": [
+        760,
+        1480,
+        1040,
+        1760
+      ]
+    },
+    {
+      "name": "Dark water / air and liquid inclusions",
+      "xyxy": [
+        1155,
+        1025,
+        1335,
+        1205
+      ]
+    },
+    {
+      "name": "Dry-grain fringes",
+      "xyxy": [
+        800,
+        650,
+        1100,
+        950
+      ]
+    },
+    {
+      "name": "Dark pore region",
+      "xyxy": [
+        2800,
+        1180,
+        3040,
+        1420
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "blue_image": {
+    "path": "./input_images/Basler_acA4112-20um__40402042__20261023_163522172_6545.tiff",
+    "sha256": "82fa7a2540401b1975fc0f356d4486ca7d4923f7aea0b5d6ebcf40d2dfe07a49"
+  },
+  "red_blue_image": {
+    "path": "./input_images/Basler_acA4112-20um__40402042__20261023_163522172_6544.tiff",
+    "sha256": "55f8040c162323ce018c4cacd226d23b7a1b03563e5207ed366f494cf550d51f"
+  },
+  "reference_sources": {
+    "initial_image": {
+      "path": "./input_images/Basler_acA4112-20um__40402042__20261023_163522172_0001.tiff",
+      "sha256": "b1c771e6c87d390e819060790aab55fe9069fd0cd6de9caacade85be50bcb883"
+    }
+  }
+}

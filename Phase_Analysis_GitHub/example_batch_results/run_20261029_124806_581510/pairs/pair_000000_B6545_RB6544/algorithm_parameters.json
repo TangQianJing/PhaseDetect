@@ -1,0 +1,32 @@
+{
+  "blue_scale": 1.1,
+  "watershed_sigma_px": 1.0,
+  "nominal_watershed_h": 8.0,
+  "watershed_sensitivity": [
+    8.0
+  ],
+  "watershed_marker_clearance_px": 2.0,
+  "air_wall_lit_fraction": 0.27,
+  "air_wall_min_lit_samples": 12,
+  "air_wall_min_valid_samples": 20,
+  "air_wall_max_unlit_fraction": 0.65,
+  "broad_water_region_fraction": 0.6,
+  "use_fringe_graph": true,
+  "graph_min_air_neighbours": 2,
+  "detect_liquid_inclusions": true,
+  "fluorescence_priority": "Direct-water pixels are liquid before and throughout every inference run.",
+  "basin_scope": "Nominal region phase describes only pixels not constrained by direct fluorescence or inclusion cores.",
+  "contact_topology": "Initial-wall-side/region adjacency approximation, not explicit triple-junction reconstruction.",
+  "nominal_fallback": "Unresolved pixels display as liquid and remain flagged weak; dark B alone never means air.",
+  "inclusion_scope": "Automatic compact optical liquid-core proposals; no manual outlines, no complete droplet reconstruction.",
+  "support_meaning": "Heuristic evidence index, not a probability.",
+  "sensitivity_meaning": "Phase agreement under watershed prominence changes, not a confidence interval.",
+  "stage_order": [
+    "initial grain geometry",
+    "fixed fluorescence water seeds",
+    "raw-image basin geometry",
+    "unknown-pixel wall/fringe inference",
+    "compact liquid inclusion proposals",
+    "sensitivity checks"
+  ]
+}

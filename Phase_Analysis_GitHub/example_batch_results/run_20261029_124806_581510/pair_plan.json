@@ -1,0 +1,22 @@
+{
+  "start_index": 6544,
+  "end_index": 6545,
+  "blue_parity": "odd",
+  "unpaired_policy": "error",
+  "missing_pair_policy": "error",
+  "pair_interval_seconds": null,
+  "pairs": [
+    {
+      "pair_number": 0,
+      "first_index": 6544,
+      "second_index": 6545,
+      "blue_index": 6545,
+      "red_blue_index": 6544,
+      "blue_path": "./input_images/Basler_acA4112-20um__40402042__20261023_163522172_6545.tiff",
+      "red_blue_path": "./input_images/Basler_acA4112-20um__40402042__20261023_163522172_6544.tiff",
+      "time_seconds": null
+    }
+  ],
+  "skipped_pairs": [],
+  "unpaired_indices": []
+}

@@ -1,0 +1,50 @@
+ANACONDA AND SPYDER INSTALLATION INSTRUCTIONS
+Windows | Phase-analysis scripts | Quick installation guide
+
+1. Open the correct terminal
+
+This guide assumes Anaconda is installed on Windows. Open Anaconda Prompt from the Start menu. Close any existing Spyder windows. Run the conda commands below in Anaconda Prompt, not in the Spyder console.
+
+2. Install Spyder and all required libraries once
+
+Paste all four lines together as one command. Keep the quotes and the ^ symbols: ^ continues a command onto the next line in Anaconda Prompt.
+
+conda create -n phase-analysis --override-channels -c conda-forge ^
+  python=3.11 spyder "numpy>=1.23,<3" "scipy>=1.9,<2" ^
+  "scikit-image>=0.20,<1" "tifffile>=2023.1.23" ^
+  "matplotlib>=3.6,<4" "pillow>=9,<14"
+
+When asked to proceed, type y and press Enter. Wait for installation to finish. This creates a separate environment named phase-analysis with the library ranges required by the scripts.
+
+3. Activate the environment and open Spyder
+
+conda activate phase-analysis
+spyder
+
+Use these same two commands each time you work on this analysis. You do not need to repeat the installation.
+
+4. Check the libraries in Spyder
+
+Paste this into Spyder's IPython Console:
+
+import sys
+print(sys.executable)
+import numpy, scipy, skimage, tifffile, matplotlib, PIL
+print("Libraries OK")
+
+The Python path should include envs\phase-analysis, and the final line should say Libraries OK. Package import names differ: scikit-image is skimage, and Pillow is PIL.
+
+5. Open and run the experiment scripts
+
+Extract the complete analysis ZIP. Keep phase_analysis/ beside RUN_ANALYSIS.py. In Spyder, edit settings.py for your images, then open RUN_ANALYSIS.py and press F5. Choose the current console if asked.
+
+If libraries are missing or Spyder uses another environment
+
+In the activated Anaconda Prompt, run python -c "import sys; print(sys.executable)". Copy that path into Spyder: Tools > Preferences > Python interpreter > Use the following Python interpreter. Apply, then choose Consoles > Restart kernel and repeat step 4.
+
+If conda says phase-analysis already exists, skip step 2 and use step 3. If Anaconda Prompt is missing, install Anaconda before following these instructions.
+
+Official references:
+Spyder installation guide: https://docs.spyder-ide.org/current/installation.html
+Conda environments: https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html
+Spyder environment selection: https://docs.spyder-ide.org/current/faq.html

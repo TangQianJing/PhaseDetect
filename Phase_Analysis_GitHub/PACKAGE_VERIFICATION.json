@@ -1,0 +1,27 @@
+{
+  "distribution": "Separate sanitized GitHub copy",
+  "original_spyder_files_and_zips_unchanged": true,
+  "fresh_demo_from_path_with_spaces": "passed",
+  "launcher": "RUN_ANALYSIS.main",
+  "real_pair": "B=6545, R&B=6544; initial=0001; 3000x4096",
+  "phase_counts_and_saturation_equal_original": true,
+  "fixed_water_grains_pore_partition_checks": {
+    "fixed_water_preserved": true,
+    "grains_preserved": true,
+    "outside_bed_excluded": true,
+    "pore_partition_complete": true,
+    "no_fluorescence_on_grain": true
+  },
+  "report_regeneration": "passed",
+  "fresh_run_resume_skip_completed": "passed",
+  "seconds": 29.61,
+  "archived_example": "Sanitized static archive; original resume markers intentionally excluded.",
+  "scientific_scope": "One acquired pair and prior synthetic software tests, not independent scientific accuracy validation.",
+  "python_sources_compile": "passed",
+  "documentation_local_links": "passed",
+  "local_user_home_and_workspace_path_scan": "passed",
+  "cache_and_generated_results_excluded": "passed",
+  "each_file_below_25_MiB": true,
+  "original_input_tiffs_and_ten_example_figures": "byte-identical",
+  "license": "No reuse license was selected automatically."
+}

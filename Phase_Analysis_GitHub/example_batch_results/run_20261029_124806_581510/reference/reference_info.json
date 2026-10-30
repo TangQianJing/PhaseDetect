@@ -1,0 +1,59 @@
+{
+  "reference_kind": "raw_initial",
+  "geometry_info": {
+    "method": "polygon",
+    "bed_polygon_xy": [
+      [
+        55.0,
+        576.0
+      ],
+      [
+        4030.0,
+        590.0
+      ],
+      [
+        4030.0,
+        2580.0
+      ],
+      [
+        55.0,
+        2570.0
+      ]
+    ],
+    "grain_method": "Phansalkar",
+    "window": 101,
+    "k": 0.25,
+    "r": 0.5,
+    "p": 2.0,
+    "q": 10.0,
+    "sigma": 0.8,
+    "min_area": 25,
+    "intensity_scale": 255.0,
+    "grain_dilation_px": 0,
+    "bed_pixels": 7918204,
+    "grain_pixels": 3619209,
+    "pore_pixels": 4298995,
+    "warnings": [],
+    "initial_shift_yx": [
+      0.0,
+      0.0
+    ],
+    "binarization_performed": true,
+    "binary_input_levels": null,
+    "mask_input_mode": "binarize",
+    "reference_kind": "raw_initial",
+    "shape_hw": [
+      3000,
+      4096
+    ],
+    "grain_pixels_excluded_outside_bed": 0,
+    "external_masks_resized_or_cleaned": false
+  },
+  "sources": {
+    "initial_image": {
+      "path": "./input_images/Basler_acA4112-20um__40402042__20261023_163522172_0001.tiff",
+      "sha256": "b1c771e6c87d390e819060790aab55fe9069fd0cd6de9caacade85be50bcb883"
+    }
+  },
+  "pore_pixel_count": 4298995
+}

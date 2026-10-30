@@ -1,0 +1,9 @@
+{
+  "1": "weak or fallback region",
+  "2": "watershed-parameter disagreement",
+  "4": "fluorescence-threshold disagreement",
+  "8": "free-interface band",
+  "16": "possible shiny grain fringe",
+  "32": "clipping near interface",
+  "64": "automatic liquid-inclusion boundary"
+}
